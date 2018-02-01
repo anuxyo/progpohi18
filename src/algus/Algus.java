@@ -12,8 +12,9 @@ package algus;
 public class Algus {
     
     public static void ilmaKommentaar(int temperatuur){
-        if(temperatuur>0){System.out.println("Sulab");}
-        else{System.out.println("Jäätab");}
+        if(temperatuur>0){System.out.println("Soe");}
+        else if(temperatuur<0){System.out.println("Külm");}
+        else{System.out.println("Sula");}
     }
 
     /**
@@ -21,7 +22,7 @@ public class Algus {
      */
     public static void main(String[] args) {
         System.out.println("Hello, Web!");
-        ilmaKommentaar(5);
+        ilmaKommentaar(0);
     }
     
 }
